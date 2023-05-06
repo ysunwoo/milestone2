@@ -112,3 +112,18 @@ This package contains the schemas of our database. There are four files:
 ## Repositories
 
 This package follows the standard implementation from [the official documentation](https://spring.io/guides/gs/accessing-data-mongodb/)
+
+## Service
+
+This package contains the main implementation of the API. There are six files, but only 3 of them actually contain the implementation.
+
+* [MovieServiceImpl](./src/main/java/com/example/service/MovieServiceImpl.java): Contains two methods: Get the movie information by ID and get the number of movies.
+
+* [RatingServiceImpl](./src/main/java/com/example/service/RatingServiceImpl.java): Contains the main implementation of the required feature of this milestone, i.e., querying the movie with average rating greater than or equal to a given number. 
+
+* [UserServiceImpl](./src/main/java/com/example/service/UserServiceImpl.java): Contains 6 methods:
+    * Save a new user
+    * Get all users
+    * Find user by ID
+    * Update the specified user
+    * Get the maximum ID number
