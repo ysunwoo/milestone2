@@ -7,4 +7,7 @@ import com.example.model.ExercisePlan;
 import java.util.List;
 @Repository
 public interface ExercisePlanRepository extends MongoRepository<ExercisePlan, String>{
+    List<ExercisePlan> findByUserId(String userId);
+    List<ExercisePlan> findByDayOfWeek(String dayOfWeek);
+    List<ExercisePlan> findByUserIdAndDayOfWeek(String userId, String dayOfWeek);
 }
